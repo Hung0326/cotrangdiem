@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: yakishop
+  api_key: '617883264795748'
+  api_secret: VSncohDcBEsr8oalvBSiPkeQeSg
+  enhance_image_tag: true
+  static_file_support: true
+production:
+  cloud_name: yakishop
+  api_key: '617883264795748'
+  api_secret: VSncohDcBEsr8oalvBSiPkeQeSg
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: yakishop
+  api_key: '617883264795748'
+  api_secret: VSncohDcBEsr8oalvBSiPkeQeSg
+  enhance_image_tag: true
+  static_file_support: false
