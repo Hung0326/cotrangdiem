@@ -1,0 +1,55 @@
+<div class="header_top_vertical">
+  <ul class="header_top_vertical__list_menu">
+    <div class="header_top_vertical__list_menu_1">
+      <li class="header_top_vertical__list_item pesudo_home_page">
+        <%= link_to '/', class: 'menu_vertical_home popup_menu_vertical', data_content: t('top.home') do %>
+          <%= image_tag 'top/home.png', class: 'img_menu_vertical' %>
+        <% end %>
+      </li>
+    </div>
+    <div class="header_top_vertical__list_menu_2">
+      <li class="header_top_vertical__list_item">
+        <%= link_to '#', class: 'menu_vertical_coupon popup_menu_vertical', data_content: t('top.coupon') do %>
+          <%= image_tag 'top/coupons.png', class: 'img_menu_vertical' %>
+        <% end %>
+      </li>
+      <li class="header_top_vertical__list_item">
+        <%= link_to '#', class: 'menu_vertical_wishlist popup_menu_vertical', data_content: t('top.wish_list') do %>
+          <%= image_tag 'top/heart-shape-outline-with-lining-at-right-edge.png', class: 'img_menu_vertical' %>
+        <% end %>
+      </li>
+      <li class="header_top_vertical__list_item">
+        <%= link_to '#', class: 'menu_vertical_history popup_menu_vertical', data_content: t('top.viewed') do %>
+          <%= image_tag 'top/timer.png', class: 'img_menu_vertical' %>
+        <% end %>
+      </li>
+      <li class="header_top_vertical__list_item">
+        <%= link_to '#', class: 'menu_vertical_tracking_order popup_menu_vertical', data_content: t('top.tracking_order') do %>
+          <%= image_tag 'top/location.png', class: 'img_menu_vertical' %>
+        <% end %>
+      </li>
+    </div>
+    <div class="header_top_vertical__list_menu_3">
+      <li class="header_top_vertical__list_item link_btn_shared">
+        <%= link_to '#', class: 'menu_vertical_share popup_menu_vertical', data_content: t('top.ctsf') do %>
+          <%= image_tag 'top/facebook.png', class: 'img_menu_vertical' %>
+        <% end %>
+      </li>
+      <li class="header_top_vertical__list_item link_btn_shared">
+        <%= link_to '#', class: 'menu_vertical_share popup_menu_vertical', data_content: t('top.ctsi') do %>
+          <%= image_tag 'top/instagram.png', class: 'img_menu_vertical' %>
+        <% end %>
+      </li>
+      <li class="header_top_vertical__list_item">
+        <%= link_to '', class: 'menu_vertical_feedback popup_menu_vertical', data_content: t('top.feedback') do %>
+          <%= image_tag 'top/feedback.png', class: 'img_menu_vertical' %>
+        <% end %>
+      </li>
+      <li class="header_top_vertical__list_item scroll_top">
+        <%= link_to '#', class: 'menu_vertical_scroll_top popup_menu_vertical', data_content: t('top.btt') do %>
+          <%= image_tag 'top/arrow-up.png', class: 'img_menu_vertical' %>
+        <% end %>
+      </li>
+    </div>
+  </ul>
+</div>
