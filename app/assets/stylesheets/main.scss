@@ -115,6 +115,7 @@ html, body {
     color: var(--pink-color);
   }
 }
+
 .link_have_dropdown_sm {
   position: relative;
   margin-right: 12px;
@@ -130,6 +131,9 @@ html, body {
     border-bottom: 4px solid transparent;
     border-left: 4px solid transparent;
     box-sizing: border-box;
+  }
+  &:hover {
+    &::after { border-right: 4px solid var(--pink-color); }
   }
 }
 .link_have_dropdown_sm.active {

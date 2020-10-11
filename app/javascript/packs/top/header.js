@@ -7,8 +7,15 @@ $(document).ready(function () {
   $('.overlay_for_header').click(function (e) { 
     $(this).removeClass('active');
     $('.bx_contain_lang').removeClass('active')
-    $('.link_have_dropdown_sm').removeClass('active')
   });
+
+  $('.link_have_dropdown_sm').hover(function () {
+      $(this).addClass('add_color_pink');
+      
+    }, function () {
+      // out
+    }
+  );
 
   $('.cart_or').hover(function () {
       $(this).css('display', 'none')
@@ -67,7 +74,7 @@ $(document).ready(function () {
 
   $(".menu_vertical_scroll_top").click(function (e){
     var body = $("html, body");
-    // $('.header_top_vertical__list_item .popup_menu_vertical').removeClass('animate_popup');
+    $('.header_top_vertical__list_item .popup_menu_vertical').removeClass('animate_popup');
     body.stop().animate({ scrollTop: 0}, 700, 'swing')
   });
   // => end
