@@ -95,6 +95,8 @@ html, body {
   margin-right: 2px;
 }
 
+.fix_10 { transform: translateY(10px); }
+
 .img_logo_50 {
   width: 50px;
 }
@@ -119,22 +121,23 @@ html, body {
   &::after {
     position: absolute;
     content: '';
-    top: 45%;
-    right: -14px;
+    top: 33%;
+    right: -10px;
     width: 8px;
     height: 8px;
-    border-top: 4px solid black;
-    border-left: 4px solid transparent;
+    border-right: 4px solid var(--deep-black);
+    border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
-    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
     box-sizing: border-box;
   }
 }
 .link_have_dropdown_sm.active {
   &::after {
-    top: 20%;
-    border-bottom: 4px solid var(--pink-color) !important;
-    border-top: 4px solid transparent !important;
+    top: 35%;
+    right: -15px;
+    border-left: 4px solid var(--pink-color) !important;
+    border-right: 4px solid transparent !important;
   }
   color: var(--pink-color);
 }
