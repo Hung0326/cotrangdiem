@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ProjectCoTrangDiemV2</title>
+    <title><%= full_title(yield(:title)) %></title>  
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= favicon_link_tag 'top/brush.png' %>
     <!-- <meta http-equiv="refresh" content="8; url=http://192.168.0.121:3000" /> -->
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>

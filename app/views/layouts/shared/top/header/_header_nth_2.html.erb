@@ -1,42 +1,36 @@
-<div class="header_pc_nth_2">
+<div class="header_pc_nth_2 <%= custome %> ">
   <div class="container">
     <div class="content_header_pc_nth_2">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="logo_yaki">
-            <%= image_tag 'top/brush.png', class: 'img_logo_50 logo_logo' %>&nbsp;
-            <%= link_to 'Ya-ki', '/', class: 'title_logo' %>
+      <div class="logo_yaki">
+        <%= image_tag 'top/brush.png', class: 'img_logo_50 logo_logo' %>&nbsp;
+        <%= link_to 'Ya-ki', '/', class: 'title_logo' %>
+      </div>
+      <div class="frame_search_top_input_with_option">
+        <div class="frame_search_top">
+          <div class="frame_search_top_input">
+            <input type="text", class="input_x40", placeholder="Nhập thông tin tìm kiếm">
+          </div>
+          <div class="frame_search_top_submit">
+            <a href="" type="button" class="btn_submit_search"><%= t('top.search') %></a>
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="frame_search_top">
-            <div class="frame_search_top_input">
-              <input type="text", class="input_x40", placeholder="Nhập thông tin tìm kiếm">
-            </div>
-            <div class="frame_search_top_submit">
-              <a href="" type="button" class="btn_submit_search"><%= t('top.search') %></a>
-            </div>
-          </div>
-          <div class="suggestions_search">
-            <ul>
-              <li> <%= link_to 'xiaomi', '#' %> </li>
-              <li> <%= link_to 'Son gia re', '#' %> </li>
-              <li> <%= link_to 'co bh rem', '#' %> </li>
-              <li> <%= link_to 'tui xach', '#' %> </li>
-              <li> <%= link_to 'Samsung', '#' %> </li>
-              <li> <%= link_to 'IPhone 12', '#' %> </li>
-              <li> <%= link_to 'Logitech', '#' %> </li>
-            </ul>
-          </div>
+        <div class="suggestions_search">
+          <ul>
+            <li> <%= link_to 'xiaomi', '#' %> </li>
+            <li> <%= link_to 'Son gia re', '#' %> </li>
+            <li> <%= link_to 'co bh rem', '#' %> </li>
+            <li> <%= link_to 'tui xach', '#' %> </li>
+            <li> <%= link_to 'Samsung', '#' %> </li>
+            <li> <%= link_to 'IPhone 12', '#' %> </li>
+            <li> <%= link_to 'Logitech', '#' %> </li>
+          </ul>
         </div>
-        <div class="col-lg-2">
-          <div class="cart_header"%>
-            <%= link_to '/' do %>
-              <%= image_tag 'top/shopping-cart-p.png', class: 'img_logo_45 cart_or', title: t('top.cart')%>
-              <%= image_tag 'top/shopping-cart-r.png', class: 'img_logo_45 car_rd', title: t('top.cart')%>
-            <% end %>
-          </div>
-        </div>
+      </div>
+      <div class="cart_header"%>
+        <%= link_to '/' do %>
+          <%= image_tag 'top/shopping-cart-p.png', class: 'img_logo_45 cart_or', title: t('top.cart')%>
+          <%= image_tag 'top/shopping-cart-r.png', class: 'img_logo_45 car_rd', title: t('top.cart')%>
+        <% end %>
       </div>
     </div>
   </div>

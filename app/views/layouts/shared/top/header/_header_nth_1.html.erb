@@ -1,50 +1,47 @@
 <div class="header_pc_nth_1">
   <div class="container">
-    <div class="content_header_pc_nth_1">
-      <ul class="list_menu_item_header_pc_nth_1">
-        <li class="item_menu_header_pc_nth_1">
-          <%= image_tag 'top/img_history_on_top.png', class: 'img_18' %>
-          <%= link_to t('top.history'), '#', class: 'link_to_1' %>
-        </li>
-        <li class="item_menu_header_pc_nth_1">
-          <%= image_tag 'top/wish_list_top.png', class: 'img_18' %>
-          <%= link_to t('top.wish_list'), '#', class: 'link_to_1' %>
-        </li>
-        <li class="item_menu_header_pc_nth_1 item_has_lang">
-          <div class="menu_language">
-            <% if locale == :vi %>
+    <ul class="list_menu_header_1">
+      <li class="item_menu_header_1">
+        <%= image_tag 'top/img_history_on_top.png', class: 'img_18' %>
+        <%= link_to t('top.history'), '#', class: 'link_to_1' %>
+      </li>
+      <li class="item_menu_header_1">
+        <%= image_tag 'top/wish_list_top.png', class: 'img_16' %>
+        <%= link_to t('top.wish_list'), '#', class: 'link_to_1' %>
+      </li>
+      <li class="item_menu_header_1">
+        <div class="menu_language">
+          <% if locale == :vi %>
+            <%= image_tag 'vn.jpg', class: 'img_24x18' %>
+          <% else %>
+            <%= image_tag 'usa.jpg', class: 'img_24x18' %>
+          <% end %>
+          <%= link_to '#', class: 'link_to_1 link_have_dropdown_sm' do
+            locale == :vi ? t('top.vietnam') : t('top.usa')
+          end %>
+        </div>
+        <div class="list_menu_language">
+          <ul class="menu_language">
+            <li class="item_language">
               <%= image_tag 'vn.jpg', class: 'img_24x18' %>
-            <% else %>
+              <%= link_to t('top.vietnam'), locale:'vi' %>
+            </li>
+            <li class="item_language">
               <%= image_tag 'usa.jpg', class: 'img_24x18' %>
-            <% end %>
-            <%= link_to '#', class: 'link_to_1 link_have_dropdown_sm' do
-              locale == :vi ? t('top.vietnam') : t('top.usa')
-            end %>
-            <div class="list_menu_language">
-              <ul class="menu_language">
-                <span><%= t('top.language') %></span>
-                <li class="item_language">
-                  <%= image_tag 'vn.jpg', class: 'img_24x18' %>
-                  <%= link_to t('top.vietnam'), locale:'vi' %>
-                </li>
-                <li class="item_language">
-                  <%= image_tag 'usa.jpg', class: 'img_24x18' %>
-                  <%= link_to t('top.usa'), locale:'en' %>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="item_menu_header_pc_nth_1">
-          <%= image_tag 'top/img_acc_on_header.png', class: 'img_18' %>
-          <%= link_to t('top.account'), '#', class: 'link_to_1' %>
-        </li>
-        <li class="item_menu_header_pc_nth_1">
-          <%= image_tag 'top/question.png', class: 'img_18' %>
-          <%= link_to t('top.help'), '#', class: 'link_to_1' %>
-        </li>
-      </ul>
-    </div>
+              <%= link_to t('top.usa'), locale:'en' %>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="item_menu_header_1">
+        <%= image_tag 'top/img_acc_on_header.png', class: 'img_18' %>
+        <%= link_to t('top.account'), '#', class: 'link_to_1' %>
+      </li>
+      <li class="item_menu_header_1">
+        <%= image_tag 'top/question.png', class: 'img_18' %>
+        <%= link_to t('top.help'), '#', class: 'link_to_1' %>
+      </li>
+    </ul>
   </div>
 </div>
 <div class="overlay_for_header"></div>
