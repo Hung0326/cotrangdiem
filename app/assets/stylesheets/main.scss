@@ -2,6 +2,8 @@
   --height-header-top: 174px;
   --height-header-top-first: 40px;
   --height-header-top-second: 94px;
+  --height-banner: 276px;
+  --margin-top-banner: 12px;
   --bg-color-header-top-first: #fafafa;
   --color-persudo-s: #d4d4d4;
   --font-size-16: 16px;
@@ -68,10 +70,6 @@ html, body {
   overflow: hidden;
 }
 
-.container {
-  width: 1200px;
-  margin: auto;
-}
 // Confid image
 .img_18 {
   width: 18px;
@@ -93,6 +91,10 @@ html, body {
   width: 24px;
   margin-bottom: 4px;
   margin-right: 2px;
+}
+
+.img_20 {
+  width: 20px;
 }
 
 .fix_10 { transform: translateY(10px); }
