@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="c_b_u">
+    <div class="row">
+      <div class="col c-2">
+        <div class="category_top">
+          <ul class="list_category_top">
+            <li>
+              <%= link_to "Tất cả sản phẩm", '#' %>
+            </li>
+            <% all_category.each do |data| %>
+            <li class="list_item_category_top", data-category=<%= data.position %>>
+              <%= link_to data.name, '#', class: 'link_item_category_top' %>
+            </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <div class="col c-8">
+        <div class="banner">
+
+          <!-- Code banner -->
+
+          <% Category::NUMBER_CATEGORY.times do |i| %>
+            <%= render 'user/top/category_and_banner/child_categories', position: i %>
+          <% end %>
+        </div>
+      </div>
+      <div class="col c-2">
+        <div class="box_user_beauti">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

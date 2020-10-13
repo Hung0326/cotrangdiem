@@ -1,4 +1,5 @@
 class Category < ApplicationRecord
+  NUMBER_CATEGORY = 6
   before_save :convert_to_slug
   scope :all_category, -> { where("level = 1 AND position < 7 AND status = 1").order(position: :asc) }
   def convert_to_slug

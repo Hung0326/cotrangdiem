@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'config'
 gem 'cloudinary'
 gem 'rails-i18n'
+gem 'devise'
 # Crawler data
 gem 'nokogiri', '1.10.10'
 

@@ -11,8 +11,10 @@
   </head>
 
   <body>
-    <div class="app"> 
-      <%= render 'layouts/shared/top/header/header' %>
+    <div class="app">
+      <% if !params[:uag] %>
+        <%= render 'user/top/header/header' %>
+      <% end %>
       <%= yield %>
     </div>
   </body>
