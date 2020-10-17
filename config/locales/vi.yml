@@ -19,3 +19,7 @@ vi:
     tracking_order: 'Theo dõi đơn hàng'
     category: 'TẤT CẢ DANH MỤC'
     cskh: 'Chăm sóc khách hàng'
+  acc: 
+    signin: 'Đăng nhập'
+    qlchcb: 'Quản lý cửa hàng của bạn'
+    fgp: 'Quên mật khẩu?'

@@ -1,0 +1,56 @@
+<% provide(:title, params[:uag] == true ? "#{'Admin ' << t('acc.signin')}" : t('acc.signin')) %>
+<div class="page_admin_account">
+  <div class="container">
+    <div class="box_page_admin_account">
+      <div class="box_page_admin_account_left">
+        <div class="box_item">
+          <h1 class="logo_yaki_no_fi">Ya-Ki</h1>
+          <h2 class="text_title_h2 mr-0"><%= t('acc.signin') %></h2>
+          <h2 class="contain_below_h2 mr-0"><%= t('acc.qlchcb') %></h2>
+        </div>
+      </div>
+      <div class="box_page_admin_account_right">
+        <div class="box_form_login">
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field">
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'f_input_type_1', placeholder: 'Email' %>
+          </div>
+
+          <div class="field">
+            <%= f.password_field :password, autocomplete: "current-password", class: 'f_input_type_1', placeholder: 'Password' %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit t('acc.signin'), class: 'btn btn-submit' %>
+          </div>
+          <% end %>
+          <div class="f_box_link">
+            <%= link_to t('acc.fgp'), new_password_path(resource_name), class: 'f_link' %><br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="admin_language">
+  <div class="container">
+    <ul>
+      <li>
+        <% if locale == :vi %>
+          <span><%= t('top.vietnam') %></span>
+        <% else %>
+          <%= link_to t('top.vietnam'), locale:'vi', class: 'f_link' %>
+        <% end %>
+      </li>
+      <li>
+        <% if locale == :en %>
+          <span><%= t('top.usa') %></span>
+        <% else %>
+        <%= link_to t('top.usa'), locale:'en', class: 'f_link' %>
+        <% end %>
+      </li>
+    </ul>
+    <h2 class="contain_below_h2 mr-0">Cửa hàng cọ trang điểm Ya-Ki. Cọ trang điểm số một tại Việt Nam.</h2>
+    <h2 class="contain_below_h2 mr-0">Địa chỉ: 123 Điện BIên Phủ, Phường 17, Quận Bình Thạnh</h2>
+  </div>
+</div>

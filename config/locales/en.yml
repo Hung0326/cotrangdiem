@@ -19,3 +19,7 @@ en:
     tracking_order: 'Track your order'
     category: 'All Category'
     cskh: 'Customer Care'
+  acc: 
+    signin: 'Sign in'
+    qlchcb: 'Manage your store'
+    fgp: 'Forgot your password?'
